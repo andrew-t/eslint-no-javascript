@@ -10,7 +10,41 @@ j
 
 —increments `j` instead of `i`, which is confusing, so what we're going to do is ban the `++` operator. This logic is completely sound and reasonable, as are all the other eminently sensible rules that eslint enforces by default. If I have one criticism of them, it is that they do not go far enough. And to that end, I have created [eslint-no-javascript](https://www.npmjs.com/package/eslint-no-javascript), which enforces that developers must not use JavaScript. Any non-whitespace code in your source will be rejected, and if you use the `--fix` option it will be removed.
 
-JavaScript is the cause of most accessibility, usability, performance and security issues in modern webapps and its use is discouraged by all reputable experts. This plugin can remove this problem from all of your 
+JavaScript is the cause of most accessibility, usability, performance and security issues in modern webapps and its use is discouraged by all reputable experts. This plugin can remove this problem from all of your projects.
+
+## Examples of valid code
+
+```js
+
+```
+✅
+
+```js
+
+```
+✅
+
+## Examples of invalid code
+
+```js
+const x = 4;
+```
+❌ Unexpected JavaScript
+
+```js
+console.log("example")
+```
+❌ Unexpected JavaScript
+
+```js
+function test() {
+    let y = 2;
+    return y;
+}
+
+test();
+```
+❌ Unexpected JavaScript
 
 ## Usage
 
