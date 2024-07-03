@@ -1,0 +1,14 @@
+{
+  "name": "eslint-no-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Andrew Taylor <andrew@andrewt.net>",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^9.6.0"
+  },
+  "scripts": {
+    "test": "node index.test.js"
+  }
+}
