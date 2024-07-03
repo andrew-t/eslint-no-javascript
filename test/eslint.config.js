@@ -3,6 +3,7 @@ import noJs from "eslint-no-javascript";
 export default [
     {
         files: ["**/*.js"],
+        ignores: ["eslint.config.js"],
         languageOptions: {
             sourceType: "commonjs",
             ecmaVersion: "latest",

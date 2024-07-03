@@ -3,6 +3,7 @@ import eslintPluginExample from "./index.js";
 export default [
     {
         files: ["**/*.js"],
+        ignores: ["eslint.config.js"],
         languageOptions: {
             sourceType: "commonjs",
             ecmaVersion: "latest",
