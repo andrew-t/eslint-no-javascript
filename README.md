@@ -8,7 +8,7 @@ i
 j
 ```
 
-—increments `j` instead of `i`, which is confusing, so what we're going to do is ban the `++` operator. This logic is completely sound and reasonable, as are all the other eminently sensible rules that eslint enforces by default. If I have one criticism of them, it is that they do not go far enough. And to that end, I have created [eslint-no-javascript](https://www.npmjs.com/package/eslint-no-javascript), which enforces that developers must not use JavaScript. Any non-whitespace code in your source will be rejected, and if you use the `--fix` option it will be removed.
+—increments `j` instead of `i`, which is confusing, so what we're going to do is ban the `++` operator. This logic is completely sound and reasonable, as are all the other eminently sensible rules that eslint enforces by default. If I have one criticism of them, it is that they do not go far enough. And to that end, I have created [eslint-no-javascript](https://www.npmjs.com/package/eslint-no-javascript), which enforces that developers must not use JavaScript. Any code in your source other than whitespace and comments will be rejected, and if you use the `--fix` option it will be removed.
 
 JavaScript is the cause of most accessibility, usability, performance and security issues in modern webapps and its use is discouraged by all reputable experts. This plugin can remove this problem from all of your projects.
 
@@ -23,6 +23,11 @@ JavaScript is the cause of most accessibility, usability, performance and securi
   
  
    
+```
+✅
+
+```js
+// This is not executable code
 ```
 ✅
 
